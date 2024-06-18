@@ -1,0 +1,24 @@
+mkdir -p .github/workflows
+echo "name: FTP Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  ftp-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: FTP Deploy
+      uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      with:
+        server: ftp://ftp.yourdomain.com
+        username: \${{ secrets.FTP_USERNAME }}
+        password: \${{ secrets.FTP_PASSWORD }}
+        local-dir: ./ # 로컬 디렉토리 설정
+        server-dir: /public_html/ # 서버 디렉토리 설정" > .github/workflows/deploy.yml
