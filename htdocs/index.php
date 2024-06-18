@@ -1,17 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-</head>
-<body>
-    <nav>
-        <a href="/index.php">Home</a>
-        <a href="/register.php">Register</a>
-        <a href="/login.php">Login</a>
-    </nav>
-    <div class="container">
-        <h2>Welcome to the PHP application!</h2>
-    </div>
-</body>
-</html>
+<!-- index.php -->
+<?php include 'header.php'; ?>
+<div class="container">
+    <h2>Welcome to the Home Page</h2>
+    <!-- Your content here -->
+</div>
+<?php include 'footer.php'; ?>
