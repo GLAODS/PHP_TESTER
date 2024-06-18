@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 
 $servername = "sql212.infinityfree.com";
 $username = "if0_36742561";
-$password = "j2PTb1M595Sh";
+$password = "j2PIb1M59SSh";
 $dbname = "if0_36742561_TEST_DB";
 $port = 3306; // Optional
 
