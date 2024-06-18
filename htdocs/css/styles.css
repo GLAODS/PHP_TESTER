@@ -1,17 +1,16 @@
-/* styles.css 파일 업데이트 */
+/* styles.css 파일 */
 
-/* 현대적인 폰트 설정 */
+/* 기본 스타일 설정 */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
     transition: background-color 0.3s ease;
 }
 
-/* 네비게이션 스타일 개선 */
 nav {
-    background-color: #1a1a1a;
+    background-color: #333;
     padding: 1em;
     text-align: center;
 }
@@ -21,156 +20,45 @@ nav a {
     margin: 0 1em;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease, transform 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #ff4c60;
-    transform: scale(1.1);
+    color: #ddd;
 }
 
-/* 컨테이너 스타일 개선 */
 .container {
     max-width: 800px;
     margin: 2em auto;
     background: white;
     padding: 2em;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.container:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+h2 {
+    margin-top: 0;
 }
 
-/* 폼 스타일 개선 */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
 form input[type="text"],
 form input[type="password"],
 form input[type="submit"] {
-    padding: 0.75em;
-    margin: 0.75em 0;
+    padding: 0.5em;
+    margin: 0.5em 0;
     border: 1px solid #ccc;
     border-radius: 4px;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 form input[type="submit"] {
-    background-color: #1a1a1a;
+    background-color: #333;
     color: white;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-form input[type="submit"]:hover {
-    background-color: #ff4c60;
-    transform: scale(1.05);
-}
-
-/* 반응형 디자인 */
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-        margin: 1em auto;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav a {
-        margin: 0.5em 0;
-    }
-}
-/* styles.css 파일 업데이트 */
-
-/* 현대적인 폰트 설정 */
-body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    transition: background-color 0.3s ease;
-}
-
-/* 네비게이션 스타일 개선 */
-nav {
-    background-color: #1a1a1a;
-    padding: 1em;
-    text-align: center;
-}
-
-nav a {
-    color: white;
-    margin: 0 1em;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-nav a:hover {
-    color: #ff4c60;
-    transform: scale(1.1);
-}
-
-/* 컨테이너 스타일 개선 */
-.container {
-    max-width: 800px;
-    margin: 2em auto;
-    background: white;
-    padding: 2em;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.container:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-}
-
-/* 폼 스타일 개선 */
-form input[type="text"],
-form input[type="password"],
-form input[type="submit"] {
-    padding: 0.75em;
-    margin: 0.75em 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-form input[type="submit"] {
-    background-color: #1a1a1a;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-form input[type="submit"]:hover {
-    background-color: #ff4c60;
-    transform: scale(1.05);
-}
-
-/* 반응형 디자인 */
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-        margin: 1em auto;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav a {
-        margin: 0.5em 0;
-    }
-}
+    transition: background-color 0.3s ease
