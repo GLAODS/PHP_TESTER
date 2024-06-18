@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const targetId = event.currentTarget.getAttribute('href');
 
         // Only handle internal links (those starting with '#')
-        if (targetId.startsWith('#')) {
+        if (targetId && targetId.startsWith('#')) {
             event.preventDefault();
             const targetElement = document.querySelector(targetId);
 
