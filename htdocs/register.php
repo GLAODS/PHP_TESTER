@@ -20,6 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <title>Register</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
 </head>
 <body>
     <nav>

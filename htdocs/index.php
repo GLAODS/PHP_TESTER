@@ -7,6 +7,7 @@ include 'db.php';
 <head>
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
 </head>
 <body>
     <nav>
