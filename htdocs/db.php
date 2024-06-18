@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 
 $servername = "sql212.infinityfree.com";
 $username = "if0_36742561";
-$password = "Your vPanel Password";
+$password = "j2PIb1M59SSh"; // 올바른 비밀번호 입력
 $dbname = "if0_36742561_TEST_DB";
 
 // Create connection
