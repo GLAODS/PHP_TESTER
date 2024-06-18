@@ -18,10 +18,10 @@ echo "Welcome, " . $_SESSION['username'] . "!";
 </head>
 <body>
     <nav>
-        <a href="index.php">Home</a>
-        <a href="register.php">Register</a>
-        <a href="login.php">Login</a>
-        <a href="logout.php">Logout</a>
+        <a href="/index.php">Home</a>
+        <a href="/register.php">Register</a>
+        <a href="/login.php">Login</a>
+        <a href="/logout.php">Logout</a>
     </nav>
     <div class="container">
         <h2>Welcome Page</h2>

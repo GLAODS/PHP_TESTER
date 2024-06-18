@@ -6,17 +6,24 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function smoothScroll(event) {
-        event.preventDefault();
         const targetId = event.currentTarget.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
 
-        if (targetElement) {
-            targetElement.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
+        // If the targetId starts with '#', it's an internal link
+        if (targetId.startsWith('#')) {
+            event.preventDefault();
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            } else {
+                console.warn(`Element with ID ${targetId} not found.`);
+            }
         } else {
-            window.location.href = targetId; // 기본 링크 동작 수행
+            // For external links or links with relative paths
+            window.location.href = targetId;
         }
     }
 });

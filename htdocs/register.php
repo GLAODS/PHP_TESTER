@@ -24,9 +24,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
     <nav>
-        <a href="index.php">Home</a>
-        <a href="register.php">Register</a>
-        <a href="login.php">Login</a>
+        <a href="/index.php">Home</a>
+        <a href="/register.php">Register</a>
+        <a href="/login.php">Login</a>
     </nav>
     <div class="container">
         <h2>Register</h2>
