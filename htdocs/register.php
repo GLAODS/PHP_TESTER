@@ -17,18 +17,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Register</title>
+</head>
 <body>
-
-<h2>Register</h2>
-<form method="post" action="register.php">
-  Username:<br>
-  <input type="text" name="username" required>
-  <br>
-  Password:<br>
-  <input type="password" name="password" required>
-  <br><br>
-  <input type="submit" value="Register">
-</form>
-
+    <nav>
+        <a href="index.php">Home</a> |
+        <a href="register.php">Register</a> |
+        <a href="login.php">Login</a>
+    </nav>
+    <h2>Register</h2>
+    <form method="post" action="register.php">
+        Username:<br>
+        <input type="text" name="username" required>
+        <br>
+        Password:<br>
+        <input type="password" name="password" required>
+        <br><br>
+        <input type="submit" value="Register">
+    </form>
 </body>
 </html>
