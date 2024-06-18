@@ -1,19 +1,21 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+include 'db.php';
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>PHP Application</title>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
     <nav>
-        <a href="index.php">Home</a> |
-        <a href="register.php">Register</a> |
+        <a href="index.php">Home</a>
+        <a href="register.php">Register</a>
         <a href="login.php">Login</a>
     </nav>
-    <h1>Welcome to the PHP application!</h1>
+    <div class="container">
+        <h2>Welcome to the PHP application!</h2>
+    </div>
 </body>
 </html>

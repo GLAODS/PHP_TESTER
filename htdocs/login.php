@@ -1,8 +1,4 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
 include 'db.php';
 
 session_start();
@@ -32,22 +28,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html>
 <head>
     <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
     <nav>
-        <a href="index.php">Home</a> |
-        <a href="register.php">Register</a> |
+        <a href="index.php">Home</a>
+        <a href="register.php">Register</a>
         <a href="login.php">Login</a>
     </nav>
-    <h2>Login</h2>
-    <form method="post" action="login.php">
-        Username:<br>
-        <input type="text" name="username" required>
-        <br>
-        Password:<br>
-        <input type="password" name="password" required>
-        <br><br>
-        <input type="submit" value="Login">
-    </form>
+    <div class="container">
+        <h2>Login</h2>
+        <form method="post" action="login.php">
+            Username:<br>
+            <input type="text" name="username" required>
+            <br>
+            Password:<br>
+            <input type="password" name="password" required>
+            <br><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
 </body>
 </html>
