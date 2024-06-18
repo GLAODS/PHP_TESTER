@@ -9,9 +9,13 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault();
         const targetId = event.currentTarget.getAttribute('href') === "#" ? 'header' : event.currentTarget.getAttribute('href');
         const targetElement = document.querySelector(targetId);
-        targetElement.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        } else {
+            window.location.href = event.currentTarget.getAttribute('href');
+        }
     }
 });
