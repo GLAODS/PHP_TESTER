@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function smoothScroll(event) {
         const targetId = event.currentTarget.getAttribute('href');
 
-        // If the targetId starts with '#', it's an internal link
+        // Check if it's an internal link
         if (targetId.startsWith('#')) {
             event.preventDefault();
             const targetElement = document.querySelector(targetId);
@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.warn(`Element with ID ${targetId} not found.`);
             }
         } else {
-            // For external links or links with relative paths
-            window.location.href = targetId;
+            // Allow the default action for external links
+            return;
         }
     }
 });
