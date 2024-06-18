@@ -20,4 +20,4 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./ # 로컬 디렉토리 설정
-        server-dir: /public_html/ # 서버 디렉토리 설정
+        server-dir: /htdocs/ # 서버 디렉토리 설정
