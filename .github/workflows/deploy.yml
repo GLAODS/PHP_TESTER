@@ -19,5 +19,5 @@ jobs:
         server: ftp://ftpupload.net
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./ # 로컬 디렉토리 설정
+        local-dir: ./htdocs
         server-dir: /htdocs/ # 서버 디렉토리 설정
