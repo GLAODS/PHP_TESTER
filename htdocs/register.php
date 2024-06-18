@@ -1,4 +1,3 @@
-<!-- register.php -->
 <?php include 'header.php'; ?>
 <div class="container">
     <h2>Register</h2>
