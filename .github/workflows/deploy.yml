@@ -10,14 +10,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Set up Node.js 20
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+
     - name: Checkout code
       uses: actions/checkout@v3
 
     - name: FTP Deploy
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
-        server: ftpupload.net # ftp:// 제거
+        server: ftpupload.net
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./htdocs/ # 슬래시로 끝나도록 수정
-        server-dir: /htdocs/ # 서버 디렉토리 설정
+        local-dir: ./htdocs/
+        server-dir: /htdocs/
