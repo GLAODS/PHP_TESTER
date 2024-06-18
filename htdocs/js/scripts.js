@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
     function smoothScroll(event) {
         const targetId = event.currentTarget.getAttribute('href');
 
-        // Check if the link is an internal anchor link
-        if (targetId.startsWith('#')) {
+        // Check if the link is an internal anchor link (i.e., starts with '#')
+        if (targetId && targetId.startsWith('#')) {
             event.preventDefault();
             const targetElement = document.querySelector(targetId);
 
