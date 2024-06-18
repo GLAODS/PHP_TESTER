@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Website</title>
     <link rel="stylesheet" href="/css/styles.css"> <!-- 절대 경로로 설정 -->
-    <script src="/js/scripts.js" defer></script> <!-- 절대 경로로 설정 -->
 </head>
 <body>
     <nav>
