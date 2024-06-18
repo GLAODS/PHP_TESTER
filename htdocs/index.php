@@ -1,3 +1,4 @@
+<!-- index.php -->
 <?php include 'header.php'; ?>
 <div class="container">
     <h2>Welcome to the Home Page</h2>
