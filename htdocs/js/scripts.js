@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function smoothScroll(event) {
         const targetId = event.currentTarget.getAttribute('href');
 
-        // Check if it's an internal link
+        // Check if the link is an internal anchor link
         if (targetId.startsWith('#')) {
             event.preventDefault();
             const targetElement = document.querySelector(targetId);
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.warn(`Element with ID ${targetId} not found.`);
             }
         } else {
-            // Allow the default action for external links
+            // Allow the default action for non-anchor links
             return;
         }
     }
